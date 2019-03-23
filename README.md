@@ -1,4 +1,4 @@
-# # Introduction Computer Networks Project (2015-2016)
+# Introduction Computer Networks Project (2015-2016)
 
 ### Contributors
 - [@hugogaspar8](https://github.com/hugogaspar8) - Hugo Gaspar
@@ -14,7 +14,7 @@ The messages have the following format:
   - **Convite: Nome** - Invite a client with name _Nome_ to join a game.
   - **ConviteR: Resposta Nome** - Client response to the invitation sent by the client with name _Nome_. The field _Resposta_ can be "Aceite" or "Recusado" for either accepted or refused, respectively.
   - **Jogada: Posição Nome** - Move made by the client with name _Nome_. The field _Posição_ is a number between 1 and 9, corresponding to the positions of the board.
-  - **Fim: Perdeste/Empatamos Nome** - Message indicating the end of the game, specifying whether the client with name _Nome_ won or lost.
+  - **Fim: Resultado Nome** - Message indicating the end of the game, specifying whether the client with name _Nome_ won or lost by the field _Resultado_ (Perdeste/Empatamos). The client who wins the game sends this message.
   - **Lista** - Message sent to the server requesting the list of players registered in the game.
   - **Lista: Nome Estado** - Messagem sent by the server indicating the players that are registered in the game and their current status.
   - **Ok** - Acknowledge
